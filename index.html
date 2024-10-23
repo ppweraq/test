@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <aside>
+      <img class="logo" src="images/Logo.svg" alt="" />
+      <div class="aside-item">
+        <img src="images/home.png" alt="" />
+        <p>Dashboard</p>
+      </div>
+      <div class="aside-item">
+        <img src="images/transfer.png" alt="" />
+        <p>Transactions</p>
+      </div>
+      <div class="aside-item">
+        <img src="images/user.png" alt="" />
+        <p>Accounts</p>
+      </div>
+      <div class="aside-item">
+        <img src="images/dollar.png" alt="" />
+        <p>Investments</p>
+      </div>
+      <div class="aside-item">
+        <img src="images/credit-card.png" alt="" />
+        <p>Credit Cards</p>
+      </div>
+      <div class="aside-item">
+        <img src="images/loan.png" alt="" />
+        <p>Loans</p>
+      </div>
+      <div class="aside-item">
+        <img src="images/service.png" alt="" />
+        <p>Services</p>
+      </div>
+      <div class="aside-item">
+        <img src="images/econometrics.png" alt="" />
+        <p>My Privileges</p>
+      </div>
+      <div class="aside-item active">
+        <img src="images/settings-blue.png" alt="" />
+        <p>Setting</p>
+      </div>
+    </aside>
+    <div class="container">
+      <header>
+        <div class="header_container">
+          <nav class="header_nav">
+            <div class="nav__icon" id="menu-icon">
+                <button class="mobile-nav-btn">
+                  <img class="nav-icon" src="images/mobile-nav.png" alt="" />
+                </button>
+              </div>
+            <div class="header_nav-title">Setting</div>
+
+            <div class="header_nav-tools">
+              <div class="nav_input">
+                <img class="loupe-icon" src="./images/loupe.svg" alt="loupe" />
+                <input
+                  type="text"
+                  placeholder="Search for something"
+                  id="search-input"
+                />
+              </div>
+              <div class="nav-setting">
+                <img src="images/settings.png" alt="" />
+              </div>
+              <div class="nav-notification">
+                <img src="images/notification.png" alt="" />
+              </div>
+              <div class="profile_img">
+                <img src="images/profile-mini.png" alt="" />
+              </div>
+            </div>
+  
+          </nav>
+          <div class="nav_input-mobile">
+            <img class="loupe-icon" src="./images/loupe.svg" alt="loupe" />
+            <input
+              type="text"
+              placeholder="Search for something"
+              id="search-input"
+            />
+          </div>
+        </div>
+      </header>
+      <div class="mobile-nav" id="navbar">
+
+        <div class="aside-item">
+          <img src="images/home.png" alt="" />
+          <p>Dashboard</p>
+        </div>
+        <div class="aside-item">
+          <img src="images/transfer.png" alt="" />
+          <p>Transactions</p>
+        </div>
+        <div class="aside-item">
+          <img src="images/user.png" alt="" />
+          <p>Accounts</p>
+        </div>
+        <div class="aside-item">
+          <img src="images/dollar.png" alt="" />
+          <p>Investments</p>
+        </div>
+        <div class="aside-item">
+          <img src="images/credit-card.png" alt="" />
+          <p>Credit Cards</p>
+        </div>
+        <div class="aside-item">
+          <img src="images/loan.png" alt="" />
+          <p>Loans</p>
+        </div>
+        <div class="aside-item">
+          <img src="images/service.png" alt="" />
+          <p>Services</p>
+        </div>
+        <div class="aside-item">
+          <img src="images/econometrics.png" alt="" />
+          <p>My Privileges</p>
+        </div>
+        <div class="aside-item active">
+          <img src="images/settings-blue.png" alt="" />
+          <p>Setting</p>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="tabs">
+          <div class="tabs-item active">Edit Profile</div>
+          <div class="tabs-item">Preferences</div>
+          <div class="tabs-item">Security</div>
+        </div>
+        <div class="content">
+            <div class="profile_edit">
+                <div class="profile_edit-img">
+                    <img class="img1" src="images/profile.png" alt="">
+                    <img class="img2" src="images/profile2.png" alt="">
+                    <div class="edit-pen">
+                        <img src="images/pencil.png" alt="">
+                    </div>
+                </div>
+                <div class="profile_edit-columns">
+    
+                    <div class="profile_edit-columns__column">
+                        <div class="column-item">
+                            <p>Your Name</p>
+                            <input type="text" name="" id="" placeholder="Charlene Reed ">
+                        </div>
+                        <div class="column-item">
+                            <p>Email</p>
+                            <input type="email" name="" id="" placeholder="charlenereed@gmail.com ">
+                        </div>
+                        <div class="column-item">
+                            <p>Date of Birth</p>
+                            <input type="text" id="dateInput" placeholder="25 January 1990" onclick="openDatePicker()" readonly>
+                            <img src="images/arrow.png" class="arrow">
+
+                        </div>
+                        <div class="column-item">
+                            <p>Permanent Address</p>
+                            <input type="text" name="" id="" placeholder="San Jose, California, USA">
+                        </div>
+                        <div class="column-item">
+                            <p>Postal Code</p>
+                            <input type="number" name="" id="" placeholder="45962">
+                        </div>
+                    </div>
+                    <div class="profile_edit-columns__column">
+                        <div class="column-item">
+                            <p>User Name</p>
+                            <input type="text" name="" id="" placeholder="Charlene Reed ">
+                        </div>
+                        <div class="column-item">
+                            <p>Password</p>
+                            <input type="password" name="" id="" placeholder="**********">
+                        </div>
+                        <div class="column-item">
+                            <p>Present Address</p>
+                            <input type="text" name="" id="" placeholder="San Jose, California, USA">
+                        </div>
+                        <div class="column-item">
+                            <p>City</p>
+                            <input type="text" name="" id="" placeholder="San Jose">
+                        </div>
+                        <div class="column-item">
+                            <p>Country</p>
+                            <input type="text" name="" id="" placeholder="USA">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="save_button">
+                <button>Save</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
